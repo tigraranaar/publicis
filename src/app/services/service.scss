@@ -1,0 +1,100 @@
+@import "../../styles-mixins.scss";
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
+  .left {
+    flex: 0 0 50%;
+
+    img {
+      width: 90%;
+    }
+
+    @include mobile {
+      flex: 0 0 100% !important;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .right {
+    flex: 0 0 50%;
+    // padding-right: 5vw;
+
+    @include mobile {
+      flex: 0 0 100% !important;
+      padding: 0 !important;
+    }
+
+    .block {
+      text-align: left;
+
+      @include mobile {
+        text-align: center;
+        margin: 70px 0 !important;
+      }
+
+      .title {
+        max-width: 74%;
+        font-family: "Jost-ExtraBold", sans-serif;
+        font-size: 44px;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 800;
+        letter-spacing: 0.8px;
+
+        @include note {
+          max-width: 100% !important;
+          font-size: 34px !important;
+        }
+
+        @include tablet {
+          font-size: 22px !important;
+        }
+
+        @include mobile {
+          padding: 0 25px !important;
+          font-size: 18px !important;
+          margin: 0 auto;
+        }
+      }
+
+      .sub {
+        max-width: 73%;
+        margin: 0;
+        margin-top: 25px;
+        font-family: "Jost-Light", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-transform: capitalize;
+        color: #000000;
+
+        @include note {
+          max-width: 90% !important;
+        }
+
+        @include tablet {
+          font-size: 14px !important;
+          line-height: 22px !important;
+        }
+
+        @include mobile {
+          min-width: 100%;
+          padding: 0 50px !important;
+          font-size: 14px !important;
+          line-height: 20px !important;
+        }
+      }
+    }
+  }
+}

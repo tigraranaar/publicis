@@ -1,0 +1,70 @@
+.bg-1 {
+  height: 56.5vw;
+  background-image: url(../../../assets/images/visa/visa-bg1-min.png);
+}
+
+.bg-2 {
+  height: 59.6vw;
+  background-image: url(../../../assets/images/visa/visa-bg2-min.png);
+}
+
+.bg-3 {
+  height: 51vw;
+  background-image: url(../../../assets/images/visa/visa-bg3-min.png);
+}
+
+h1 {
+  margin-bottom: 20px;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 10px;
+  }
+  br {
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.twice {
+  // margin-bottom: 25px;
+  display: flex;
+  // gap: 44px;
+
+  gap: 2vw;
+  margin-bottom: 2vw;
+
+  .twice-inner {
+    flex-basis: 50%;
+
+    @media screen and (max-width: 540px) {
+      flex-basis: auto;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    gap: 25px;
+  }
+  @media screen and (max-width: 540px) {
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .mobile-hidden {
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+  }
+}
+
+.bg-4 {
+  height: 53vw;
+  background-image: url(../../../assets/images/visa/visa-bg6-min.png);
+}

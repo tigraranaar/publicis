@@ -1,0 +1,85 @@
+@import "../../styles-mixins.scss";
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . ." ". . .";
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". ." ". ." ". .";
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-areas: "." "." "." "." "." ".";
+  }
+  .works__item {
+    height: 33.334vw;
+    overflow: hidden;
+    @include tablet {
+      height: 50vw !important;
+    }
+    @include mobile {
+      height: 100vw !important;
+    }
+    .works__text {
+      height: 100%;
+      will-change: transform;
+      transform: translateY(-100%);
+      transition: 0.8s all ease-in;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+
+      .title {
+        font-family: "Jost";
+        font-weight: 700;
+        font-size: 36px;
+        // line-height: 52px;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: "Jost-Bold", sans-serif;
+        line-height: 1.2;
+
+        @include tablet {
+          font-weight: 700;
+          font-size: 25px;
+        }
+      }
+      .subtitle {
+        font-family: "Jost-Light", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 35px;
+        text-transform: capitalize;
+        color: #000000;
+        margin-top: 10px;
+        @include tablet {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      will-change: transform;
+      transform: translateY(-100%);
+      transition: 0.8s all ease-in;
+    }
+    &:hover {
+      .works__text {
+        transform: translateY(0%);
+      }
+      img {
+        transform: translateY(200%);
+      }
+    }
+  }
+}
