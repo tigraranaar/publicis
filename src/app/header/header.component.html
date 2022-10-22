@@ -1,0 +1,61 @@
+<div class="header">
+  <!-- (scroll)="onscroll()"
+[ngClass]="headerMain ? (headerfixed ? 'fixed' : 'nofixed') : 'second'" -->
+  <div class="container">
+    <div class="logo">
+      <a [routerLink]="'/'">
+        <img src="../../assets/images/logo-color.svg" alt="logo" />
+      </a>
+    </div>
+    <div class="burger" (click)="openMenu()">
+      <img src="../../assets/images/burger.svg" alt="burger" />
+    </div>
+  </div>
+</div>
+
+<ul
+  (scroll)="onScroll()"
+  class="menu"
+  [ngClass]="isMenuOpen ? 'openedMenu' : 'closedMenu'"
+>
+  <div class="wrapper">
+    <li class="menu__item">
+      <a [routerLink]="'/'" (click)="closeMenu()">HOME</a>
+    </li>
+    <li class="menu__item">
+      <a [routerLink]="'/portfolio'" (click)="closeMenu()">WORKS</a>
+    </li>
+    <li class="menu__item">
+      <a [routerLink]="'/services'" (click)="closeMenu()">SERVICES</a>
+    </li>
+    <li class="menu__item">
+      <a [routerLink]="'/contact'" (click)="closeMenu()">CONTACT US</a>
+    </li>
+  </div>
+
+  <a class="close-button" (click)="closeMenu()"></a>
+
+  <div class="footer">
+    <ul class="social-list">
+      <li>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/publicis-armenia/ "
+        >
+          <img src="../../assets/images/linkedin-white.svg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.facebook.com/PublicisArmenia">
+          <img src="../../assets/images/facebook-white.svg" alt="" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/publicis.arm/">
+          <img src="../../assets/images/instagram-white.svg" alt="" />
+        </a>
+      </li>
+    </ul>
+    <p class="copy">© 2022 Publicis Armenia. All rights reserved</p>
+  </div>
+</ul>

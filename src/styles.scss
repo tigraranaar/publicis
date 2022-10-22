@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Jost";
+  src: url("./assets//fonts/Jost-Regular.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Light";
+  src: url("./assets//fonts/Jost-Light.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Bold";
+  src: url("./assets//fonts/Jost-Bold.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Black";
+  src: url("./assets//fonts/Jost-Black.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-ExtraBold";
+  src: url("./assets//fonts/Jost-ExtraBold.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Medium";
+  src: url("./assets//fonts/Jost-Medium.ttf");
+  font-variant: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", san-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+swiper {
+  .swiper {
+    .swiper-pagination {
+      .swiper-pagination-handle {
+        .swiper-pagination-bullet {
+          border: 1px solid red !important;
+          background: #fff !important;
+        }
+        .swiper-pagination-bullet-active {
+          background: red !important;
+        }
+      }
+    }
+  }
+}

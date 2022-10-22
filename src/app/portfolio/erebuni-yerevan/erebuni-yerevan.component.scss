@@ -1,0 +1,50 @@
+.bg-1 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg1.png);
+    height: 37.2vw;
+}
+
+.bg-2 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg2.png);
+    height: 45vw;
+}
+
+.bg-3 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg3-min.png);
+    height: 66vw;
+}
+
+.bg-4 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg4-min.png);
+    height: 55.6vw;
+}
+
+.bg-5 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg5-min.png);
+    height: 67.6vw;
+}
+
+.bg-6 {
+    background-image: url(../../../assets/images/erebuni-yerevan/yerevan-bg6-min.png);
+    height: 60.5vw;
+}
+
+.erebuni-6 {
+    padding: 152px 0 120px;
+    @media screen and (max-width: 1024px) {
+        padding: 150px 0;
+    }
+    @media screen and (max-width:820px) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width:820px) {
+        padding: 50px 0;
+    }
+}
+
+h4 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}

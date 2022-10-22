@@ -1,0 +1,139 @@
+<section class="background bg-1">
+  <h1>OUR TEAM</h1>
+</section>
+
+<section class="services">
+  <div class="service-container">
+    <h2>Our Services</h2>
+    <p class="main-text">
+      To shape progress around us - this is why we get out of bed in the
+      morning. We know that progress happens when you steer change in the right
+      direction. We are agile, sharp, and designed for the changes around us.
+      <br /><br />
+      We are Publicis Armenia, an advertising and communications agency that
+      specializes in developing and implementing integrated cross-media
+      communication and advertising campaigns that captivate, engage, and
+      deliver unique brand experiences. We help our clients in Armenia and
+      abroad to lead change through powerful ideas and transformative campaigns.
+    </p>
+
+    <p class="main-text main-text-desktop">
+      We believe that change has become a defining characteristic of today's
+      business and social environment. Therefore, we create, craft, and deliver
+      communications and advertising services that help organizations to
+      transform their marketing successfully. We are proven advertising experts
+      in Armenia, having gained experience through our work with different
+      international organizations and companies. <br /><br />
+      Combined forces work best! We all have our own particular set of skills.
+      When we join our skills, magic happens.
+    </p>
+
+    <p class="main-text main-text-mobile" *ngIf="!isTextHide">
+      We believe that change has become a defining characteristic of today's
+      business and social environment. Therefore, we create, craft, and deliver
+      communications and advertising services that help organizations to
+      transform their marketing successfully.
+      <br /><br />
+      We are proven advertising experts in Armenia, having gained experience
+      through our work with different international organizations and companies.
+      <br /><br />
+      Combined forces work best! We all have our own particular set of skills.
+      When we join our skills, magic happens.
+    </p>
+
+    <a
+      class="learn-more read-more"
+      (click)="toggleText()"
+      [innerHTML]="isTextHide ? 'Read More' : 'Read Less'"
+    ></a>
+
+    <div class="swiper">
+      <swiper [config]="config_services1" class="services-block">
+        <div class="swiper-slide swiper-slide-services services-block-inner">
+          <h3>
+            Communication <br />
+            Strategies and <br />
+            Awareness Campaigns
+          </h3>
+          <p class="list">
+            Communications Strategy Development <br />
+            Creative Content <br />
+            Creation Public Awareness Campaigns <br />
+            Communications Outreach <br />
+            Audience Engagement <br />
+            Media Monitoring
+          </p>
+          <a class="learn-more" [routerLink]="['strategy']">learn more</a>
+        </div>
+        <div class="swiper-slide swiper-slide-services services-block-inner">
+          <h3>
+            Creative Services <br />
+            and Production
+          </h3>
+          <p class="list">
+            Creative Idea Generation <br />
+            Content Creation <br />
+            Full-service Design <br />
+            Photo and Video Production <br />
+            Video Scripting and Editing <br />
+            3D and Animation <br />
+            Media Monitoring
+          </p>
+          <a class="learn-more" [routerLink]="['creative']">learn more</a>
+        </div>
+        <div class="swiper-slide swiper-slide-services services-block-inner">
+          <h3>
+            360° Media buying <br />
+            and planning
+          </h3>
+          <p class="list">
+            Media Monitoring <br />
+            Competitive Analyses <br />
+            Strategic Advertising Planning <br />
+            Media Buying and Planning <br />
+            Outdoor and Indoor Advertising
+          </p>
+          <a class="learn-more" [routerLink]="['media']">learn more</a>
+        </div>
+        <div class="swiper-slide swiper-slide-services services-block-inner">
+          <h3>
+            Digital Marketing <br />
+            and Social Media
+          </h3>
+          <p class="list">
+            Social Media Marketing <br />
+            Influencer Marketing <br />
+            Content Creation <br />
+            Media Planning and Placement <br />
+            Digital Strategy Creation <br />
+            Market Analyses
+          </p>
+          <a class="learn-more" [routerLink]="['digital']">learn more</a>
+        </div>
+        <div class="swiper-slide swiper-slide-services services-block-inner">
+          <h3>
+            Event <br />
+            Marketing
+          </h3>
+          <p class="list">
+            Workshops, Training, <br />
+            and Conferences <br />
+            Corporate Events <br />
+            Hospitality Events <br />
+            Award Ceremonies <br />
+            Product Launch <br />
+            BTL Activities
+          </p>
+          <a class="learn-more" [routerLink]="['event']">learn more</a>
+        </div>
+      </swiper>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="service-container">
+    <h2>Clients</h2>
+    <div class="background bg-2"></div>
+  </div>
+</section>
